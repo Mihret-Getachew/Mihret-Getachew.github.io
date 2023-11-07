@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es2022", //sets JavaScript emitted code to 2022 version
+    "module": "ES2022", //sets module code emitted to es modules
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "*.ts",
+    "./src/*.ts",
+    "./test/*.ts",
+    "../../w1d3codequality/src/commision copy.ts"
+  ],
+  "ts-node": {
+    "esm": true // «———— enable ESM for ts-node
+  }
+}
