@@ -13,4 +13,4 @@ export const calculator = {
     let mul = this.operand1 * this.operand2;
     return mul;
   },
-}; // implement this
+};
