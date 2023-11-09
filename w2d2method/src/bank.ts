@@ -61,6 +61,7 @@ bank.debit = function (customerId: number, amount: number) {
     }
   }
 };
+
 //credit
 bank.credit = function (customerId: number, amount: number) {
   const customer = bank.transactionsDB.find(
@@ -70,6 +71,7 @@ bank.credit = function (customerId: number, amount: number) {
     customer.customerTransactions.push(amount);
   }
 };
+
 //get balance
 bank.getBalance = function (customerId: number): number {
   const customer = bank.transactionsDB.find(
@@ -85,6 +87,7 @@ bank.getBalance = function (customerId: number): number {
     return 0;
   }
 };
+
 //get bank balance
 bank.bankBalance = function (): number {
   let totalBalance = 0;

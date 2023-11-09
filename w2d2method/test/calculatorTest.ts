@@ -12,10 +12,10 @@ describe("test calculator with values 2, 3", function () {
   });
 
   it("when 2 and 3 are entered, the sum is 5", function () {
-    assert.strictEqual(calculator.sum(), 5);
+    assert.strictEqual(calculator.sum().result, 5);
   });
 
   it("when 2 and 3 are entered, the product is 6", function () {
-    assert.strictEqual(calculator.mul(), 6);
+    assert.strictEqual(calculator.mul().result, 6);
   });
 });
