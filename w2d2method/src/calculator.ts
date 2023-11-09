@@ -31,8 +31,8 @@ interface Calculator {
   mul: Function;
   result: number;
 }
-
-calculator.setValues(2, 3);
-calculator.sum().mul();
-
-console.log(calculator.result);
+// let fruit: string = prompt("Which fruit to buy?", "apple") as string;
+// let bag = {
+//   [fruit]: 5, // the name of the property is taken from the variable fruit
+// };
+// console.log(bag.apple);
