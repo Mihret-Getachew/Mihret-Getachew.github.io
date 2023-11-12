@@ -5,10 +5,10 @@ export function times100(num) {
     let x = num * 100;
     return x;
 }
-export function myMap(arr, func) {
+export function myMap(arr, fun) {
     let newArr = [];
     for (let elem of arr) {
-        newArr.push(func(elem));
+        newArr.push(fun(elem));
     }
     return newArr;
 }
