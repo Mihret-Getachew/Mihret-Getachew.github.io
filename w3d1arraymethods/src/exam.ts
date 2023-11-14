@@ -88,9 +88,10 @@ export function getAllSessionsForUser(
 export function getAllDurations(dailyRecord: Day[]): number[] {
   let result: number[] = [];
   for (const days of dailyRecord) {
-    result = days.sessions.map((session) => {
+    const res = days.sessions.map((session) => {
       return session.duration;
     });
+    result = result.concat(res);
   }
   return result;
 }

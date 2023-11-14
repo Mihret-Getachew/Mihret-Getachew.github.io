@@ -83,7 +83,7 @@ describe("fitness tracking", function () {
   });
 
   //   //Write a function getAllSessions that will use the concat method to return an array with all  the sessions in the dailyRecord.
-  //   const allSessions = [session1, session2, session3, session4, session5];
+  const allSessions = [session1, session2, session3, session4, session5];
   it("getAllSessions", function () {
     assert.deepEqual(getAllSessions(dailyRecord), allSessions);
   });
