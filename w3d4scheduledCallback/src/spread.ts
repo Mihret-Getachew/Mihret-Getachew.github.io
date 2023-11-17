@@ -10,11 +10,12 @@ Do the same pattern for concat.
 */
 
 export function copyArray<T>(arr: T[]): T[] {
-  let result = arr.slice();
+  let result = [...arr];
   return result;
 }
 export function concat<T>(arr: T[], arr2: T[]): T[] {
-  let result = arr.concat(arr2);
+  let result = [...arr, ...arr2];
+
   return result;
 }
 export function findMin(...arr: number[]): number {

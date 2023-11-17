@@ -13,13 +13,13 @@ function printNumber(start: number, end: number) {
 // printNumber(3, 5);
 
 function printNumberDelay(start: number, end: number) {
-  console.log("Printing in 3 Seconds");
-  const timeOutId = setTimeout(() => {
+  console.log("Starting in 3 seconds");
+  setTimeout(() => {
     printNumber(start, end);
     // Closures: timeOutId
   }, 3000);
 
-  clearTimeout(timeOutId);
+  //clearTimeout(timeOutId);
 }
 
 printNumberDelay(3, 5);

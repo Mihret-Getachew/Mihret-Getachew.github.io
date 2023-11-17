@@ -45,9 +45,9 @@ export function findTotalPlayerPoints(player: Player): number {
   }, 0);
   return result;
 }
-export function findTotalPointsByJersey(jersey: number): number {
-  let player = teamStats.find((player) => {
-    if (player.jersey == jersey) {
+export function findTotalPointsByJersey(jerseyIn: number): number {
+  let player = teamStats.find(({ jersey }) => {
+    if (jersey == jerseyIn) {
       return true;
     }
     return false;
