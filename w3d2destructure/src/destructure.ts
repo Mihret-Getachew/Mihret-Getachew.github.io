@@ -12,7 +12,7 @@ export function topSalary(salaries: SalaryObj): string {
   let values = Object.entries(salaries);
 
   if (values.length == 0) return "none";
-  console.log(values);
+
   let maxName = values[0][0];
   let maxSalary = values[0][1];
 

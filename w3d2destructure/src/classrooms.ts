@@ -34,7 +34,6 @@ export const classrooms: Classroom[] = [
   {
     roomNumber: 102,
     capacity: 25,
-
     students: [
       { name: "David", age: 20 },
       { name: "Eve", age: 18 },
@@ -129,7 +128,7 @@ function averageStudentAge(rooms: Classroom[]): number {
   let count = 0;
   for (const room of rooms) {
     totalSum += room.students.reduce((sum, { age }) => {
-      count += 1;
+      count++;
       return (sum += age);
     }, 0);
   }
