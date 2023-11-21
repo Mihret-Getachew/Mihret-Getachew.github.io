@@ -39,6 +39,7 @@ function outputListLoop(obj: any) {
   while (obj != null) {
     let { next, value } = obj;
     res += value;
+
     obj = next;
   }
 

@@ -10,15 +10,20 @@ import {
   //   reverseListLoop,
   //   sumTreeValues,
 } from "../src/recursion.js";
-let list: any;
+
+type Node = {
+  name: string;
+  next: Node | null;
+};
+let list: Node;
 list = {
-  value: 1,
+  name: "1",
   next: {
-    value: 2,
+    name: "2",
     next: {
-      value: 3,
+      name: "3",
       next: {
-        value: 4,
+        name: "4",
         next: null,
       },
     },
