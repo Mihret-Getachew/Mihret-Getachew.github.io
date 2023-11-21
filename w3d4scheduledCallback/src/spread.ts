@@ -18,6 +18,7 @@ export function concat<T>(arr: T[], arr2: T[]): T[] {
 
   return result;
 }
+
 export function findMin(...arr: number[]): number {
   let result = Math.min(...arr);
   return result;
